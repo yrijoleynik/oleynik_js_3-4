@@ -1,0 +1,26 @@
+/* body {
+	padding-left: 300px;
+} */
+.container {
+	background-color: gray;
+}
+.h1 {
+	text-align: center;
+}
+p {
+	font-size: 25px;
+	padding: 25px;
+	
+}
+
+label {
+	font-size: 20px;
+	margin-left: 20px;
+	
+}
+
+.btn {
+	font-size: 25px;
+	margin: 50px 200px;
+	padding: 18px;
+}
