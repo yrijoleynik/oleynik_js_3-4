@@ -1,5 +1,6 @@
 
 'use strict'
+
 // Объект с методами
 var page = {
 	// Создание элемента
@@ -46,16 +47,16 @@ page.addElem("div", elemt );
 
 	for (var i = 1; i <= 3; i++) {
 		// Ввод и вывод вопроса
-		var qustion = prompt("Вопрос  № " + i, ' Вопрос № ' + i);
-		    elemt = page.createElem("p", qustion, "");
+		// var qustion = prompt("Вопрос  № " + i, ' Вопрос № ' + i);
+		    elemt = page.createElem("p", obj['qustion' + i], ""); // получаем вопрос из объекта
 		page.addElem(".container", elemt );
 
 			// Варианты ответов
 			for (var j = 1; j <= 3; j++) {
 				// Ввод и вывод вариантов ответа
-				var answer = prompt("Ответ  № " + j, ' Ответ № ' + j);
+				// var answer = prompt("Ответ  № " + j, ' Ответ № ' + j);
 				var chk = "chk" + i + "-" + j;
-				page.createAnswer(answer, "", "checkbox", "name", chk);
+				page.createAnswer(obj['answer' + i + j], "", "checkbox", "name", chk); //получаем ответ из объекта
 				}	
 		};	
 
